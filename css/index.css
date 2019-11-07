@@ -1,1 +1,280 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 2;
+  background-image: url("https://images.unsplash.com/photo-1573048340116-b41562e8b5c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=647&q=80");
+  background-attachment: fixed;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 130%;
+}
+.container {
+  /*border: solid black 2px; */
+  width: 1000px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 220%;
+  margin: auto;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom right, dimgrey, dimgrey);
+  opacity: 0.8;
+  border-radius: 0px;
+}
+.intro {
+  font-family: 'Big Shoulders Display', cursive;
+  color: black;
+  font-weight: bold;
+  font-size: 150%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+img {
+  width: 50%;
+  border: 3px black solid;
+  border-radius: 100px;
+}
+img:hover {
+  animation: bounce 0.3s;
+}
+nav {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+button {
+  font-size: 160%;
+  font-family: 'Big Shoulders Display', cursive;
+  border: 2px solid black;
+  background-image: linear-gradient(to bottom right, darkslategrey, silver);
+  border-radius: 25px;
+  height: 23%;
+}
+button:hover {
+  background-image: linear-gradient(to bottom right, silver, sandybrown);
+  animation: bounce 0.3s;
+}
+h1 {
+  font-size: 500%;
+  font-family: 'Big Shoulders Display', cursive;
+  color: white;
+}
+h2 {
+  font-size: 150%;
+}
+a {
+  color: black;
+}
+.missionSkills {
+  display: flex;
+  justify-content: space-around;
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.intro h1 {
+  text-align: center;
+}
+.firstSect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.lastSect {
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  background-color: grey;
+  text-align: center;
+  margin-top: 20%;
+}
+h3 {
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+.workHistory {
+  padding: 2%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+.contact-wrap div {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 20%;
+  justify-content: space-between;
+}
+label {
+  text-align: center;
+  font-size: 110%;
+  font-weight: bold;
+}
+.square-button {
+  width: 50%;
+  align-self: center;
+  height: auto;
+}
+.contact-wrap h1 {
+  text-align: center;
+  margin-top: 10%;
+}
